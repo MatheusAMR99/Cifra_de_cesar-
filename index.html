@@ -10,24 +10,27 @@
 </head>
 
 <body>
-    <center><fieldset class="Box">
+
+<header class="title"><h1>Encripatador</h1></header>
+
+    <fieldset class="Box">
 
         <div class="form">
-            <div>
-                <form onSubmit={handleSubmit}>
+            <div class="form">
+                <form  onSubmit={handleSubmit}>
 
                     <H1></H1>
-                    <div>
-                        <select name="select" id="idselecione">
+                    <div >
+                        <select class="form" name="select" id="idselecione">
                             <option value="cc" id="cc">Cifra de césar</option>
                             <option value="bs64" id="bs64">Base64</option>
                         </select>
-                        <input type="number" placeholder="Range" id="range"></input>
+                        <input class="range" type="number" placeholder="Range" id="range"></input>
                     </div>
 
 
 
-                    <div>
+                    <div class="text">
                         <textarea name="Mensagem" cols="40" rows="30" id="texto"></textarea>
                     </div>
 
@@ -41,7 +44,7 @@
                 </button>
             </footer>
         </div>
-    </fieldset></center>
+    </fieldset>
 </body>
 
 <script src="./index.js"></script>
